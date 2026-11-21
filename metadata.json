@@ -1,0 +1,6 @@
+{
+  "name": "Larder & Table",
+  "description": "Neighborhood artisanal food delivery from chef-led daily kitchens.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

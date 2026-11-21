@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larder &amp; Table — Neighborhood Artisanal Food Delivery</title>
+    <meta
+      name="description"
+      content="Freshly cooked wood-fired sourdough, hand-rolled pasta, hearth grain bowls, and morning pastries delivered by bike from four neighborhood kitchens."
+    />
+    <meta property="og:title" content="Larder & Table — Neighborhood Artisanal Food Delivery" />
+    <meta
+      property="og:description"
+      content="Freshly cooked wood-fired sourdough, hand-rolled pasta, hearth grain bowls, and morning pastries delivered by bike from four neighborhood kitchens."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var stored = window.localStorage.getItem('lt_theme');
+          var theme = stored ? JSON.parse(stored) : null;
+          if (
+            theme === 'dark' ||
+            (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          ) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FAFAFA] dark:bg-[#0F1113] text-[#141517] dark:text-[#F3F4F6] antialiased selection:bg-[#164E38] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
