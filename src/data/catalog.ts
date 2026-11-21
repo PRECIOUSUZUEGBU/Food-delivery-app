@@ -7,9 +7,9 @@ import {
   Order,
 } from '../types/food';
 
-export const HERO_IMAGE = '/src/assets/images/hero_dining_spread_1795190153281.jpg';
-export const CHEF_PASS_IMAGE = '/src/assets/images/kitchen_chef_pass_1795190156229.jpg';
-export const COURIER_DISPATCH_IMAGE = '/src/assets/images/kitchen_courier_dispatch_1795190705273.jpg';
+export const HERO_IMAGE = `${import.meta.env.BASE_URL}src/assets/images/hero_dining_spread_1795190153281.jpg`;
+export const CHEF_PASS_IMAGE = `${import.meta.env.BASE_URL}src/assets/images/kitchen_chef_pass_1795190156229.jpg`;
+export const COURIER_DISPATCH_IMAGE = `${import.meta.env.BASE_URL}src/assets/images/kitchen_courier_dispatch_1795190705273.jpg`;
 
 export const KITCHENS: Kitchen[] = [
   {
@@ -24,7 +24,7 @@ export const KITCHENS: Kitchen[] = [
       '72-hour cold-fermented organic heritage wheat dough baked at 485°C over seasoned white oak, finished with raw-milk cheeses and market tomatoes.',
     signatureDish: 'Blistered San Marzano Margherita',
     sourcingNote: 'Stone-milled Hudson Valley Red Fife flour & DOP San Marzano tomatoes',
-    image: '/src/assets/images/dish_sourdough_pizza_1795190155653.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_sourdough_pizza_1795190155653.jpg`,
   },
   {
     id: 'pastificio',
@@ -38,7 +38,7 @@ export const KITCHENS: Kitchen[] = [
       'Fresh pasture-raised egg pasta extruded and hand-cut every morning, paired with slow-simmered ragùs, shaved black truffle, and Calabrian chilies.',
     signatureDish: 'Black Truffle Egg Tagliatelle',
     sourcingNote: 'Pasture-raised heritage yolks & 24-month aged Parmigiano-Reggiano',
-    image: '/src/assets/images/dish_fresh_tagliatelle_1795190156213.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_fresh_tagliatelle_1795190156213.jpg`,
   },
   {
     id: 'hearth',
@@ -52,7 +52,7 @@ export const KITCHENS: Kitchen[] = [
       'Seasonal grains, herb-brined poultry, and line-caught fish roasted over glowing charcoal and dressed with bright cold-pressed oils and fermented pickles.',
     signatureDish: 'Cedar-Seared Salmon & Farro Bowl',
     sourcingNote: 'Line-caught Pacific salmon & organic heirloom grains milled weekly',
-    image: '/src/assets/images/dish_harvest_bowl_1795190156226.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_harvest_bowl_1795190156226.jpg`,
   },
   {
     id: 'crumb',
@@ -66,7 +66,7 @@ export const KITCHENS: Kitchen[] = [
       'Cultured Normandy-style butter pastry laminated in small morning batches, stone-milled cardamom knots, and single-origin dark chocolate tarts.',
     signatureDish: 'Morning Viennoiserie Tasting Box',
     sourcingNote: '84% butterfat Normandy-style cultured butter & Valrhona couverture',
-    image: '/src/assets/images/dish_bakery_pastries_1795190156238.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_bakery_pastries_1795190156238.jpg`,
   },
 ];
 
@@ -84,7 +84,7 @@ export const DISHES: Dish[] = [
     price: 21.0,
     prepMinutes: 18,
     calories: 780,
-    image: '/src/assets/images/dish_sourdough_pizza_1795190155653.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_sourdough_pizza_1795190155653.jpg`,
     featured: true,
     dietary: ['Vegetarian'],
     tag: 'House Classic',
@@ -110,7 +110,7 @@ export const DISHES: Dish[] = [
     price: 26.5,
     prepMinutes: 16,
     calories: 690,
-    image: '/src/assets/images/dish_fresh_tagliatelle_1795190156213.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_fresh_tagliatelle_1795190156213.jpg`,
     featured: true,
     dietary: ['Vegetarian'],
     tag: 'Chef Selection',
@@ -136,7 +136,7 @@ export const DISHES: Dish[] = [
     price: 24.0,
     prepMinutes: 20,
     calories: 640,
-    image: '/src/assets/images/dish_harvest_bowl_1795190156226.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_harvest_bowl_1795190156226.jpg`,
     featured: true,
     dietary: [],
     options: [
@@ -161,7 +161,7 @@ export const DISHES: Dish[] = [
     price: 22.0,
     prepMinutes: 15,
     calories: 720,
-    image: '/src/assets/images/dish_spicy_rigatoni_1795190155780.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_spicy_rigatoni_1795190155780.jpg`,
     featured: true,
     dietary: ['Vegetarian', 'Spicy'],
     tag: 'Most Ordered',
@@ -187,7 +187,7 @@ export const DISHES: Dish[] = [
     price: 27.0,
     prepMinutes: 24,
     calories: 710,
-    image: '/src/assets/images/dish_roasted_chicken_1795190155947.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_roasted_chicken_1795190155947.jpg`,
     featured: true,
     dietary: ['Gluten-Free'],
     options: [
@@ -212,7 +212,7 @@ export const DISHES: Dish[] = [
     price: 25.0,
     prepMinutes: 10,
     calories: 1420,
-    image: '/src/assets/images/dish_bakery_pastries_1795190156238.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_bakery_pastries_1795190156238.jpg`,
     featured: true,
     dietary: ['Vegetarian'],
     tag: 'Small Batch',
@@ -238,7 +238,7 @@ export const DISHES: Dish[] = [
     price: 23.5,
     prepMinutes: 18,
     calories: 860,
-    image: '/src/assets/images/dish_diavola_pizza_1795190704519.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_diavola_pizza_1795190704519.jpg`,
     dietary: ['Spicy'],
     tag: 'Oak Oven',
     options: [
@@ -263,7 +263,7 @@ export const DISHES: Dish[] = [
     price: 20.5,
     prepMinutes: 14,
     calories: 650,
-    image: '/src/assets/images/dish_cacio_pepe_1795190704449.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_cacio_pepe_1795190704449.jpg`,
     dietary: ['Vegetarian'],
     options: [
       { id: 'regular', label: 'Regular Dinner Bowl', priceDelta: 0 },
@@ -287,7 +287,7 @@ export const DISHES: Dish[] = [
     price: 21.5,
     prepMinutes: 16,
     calories: 590,
-    image: '/src/assets/images/dish_burrata_bowl_1795190705022.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_burrata_bowl_1795190705022.jpg`,
     dietary: ['Vegetarian'],
     tag: 'Seasonal',
     options: [
@@ -312,7 +312,7 @@ export const DISHES: Dish[] = [
     price: 13.0,
     prepMinutes: 10,
     calories: 520,
-    image: '/src/assets/images/dish_rosemary_focaccia_1795190705177.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_rosemary_focaccia_1795190705177.jpg`,
     dietary: ['Vegetarian'],
     options: [
       { id: 'half-slab', label: 'Warm Table Slab (4 Cuts)', priceDelta: 0 },
@@ -336,7 +336,7 @@ export const DISHES: Dish[] = [
     price: 14.5,
     prepMinutes: 8,
     calories: 480,
-    image: '/src/assets/images/dish_chocolate_tart_1795190705462.jpg',
+    image: `${import.meta.env.BASE_URL}src/assets/images/dish_chocolate_tart_1795190705462.jpg`,
     dietary: ['Vegetarian'],
     tag: 'Evening Dessert',
     options: [
